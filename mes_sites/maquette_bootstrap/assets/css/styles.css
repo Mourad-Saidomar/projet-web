@@ -3,7 +3,7 @@ body{
 }
 
 header {
-    background: url('/assets/img/image-2.webp') center/cover no-repeat;
+    background: url('../img/image-2.webp') center/cover no-repeat;
 }
 
 .bar-progress{

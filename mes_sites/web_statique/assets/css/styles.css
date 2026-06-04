@@ -67,7 +67,7 @@ main #hero {
   min-height: 100vh;
 }
 main #hero .hero {
-  background: linear-gradient(to right, #0C7779, transparent), url(/assets/img/bg-hero.png) center/cover no-repeat;
+  background: linear-gradient(to right, #0C7779, transparent), url(../img/bg-hero.png) center/cover no-repeat;
   min-height: 95vh;
 }
 main #hero .hero h1 {

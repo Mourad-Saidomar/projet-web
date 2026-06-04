@@ -62,7 +62,7 @@ main{
         position: relative;
         min-height: 100vh;
         .hero{
-            background:linear-gradient(to right, $bg-deuxieme, transparent), url(/assets/img/bg-hero.png) center/cover no-repeat;
+            background: linear-gradient(to right, $bg-deuxieme, transparent), url(../img/bg-hero.png) center/cover no-repeat;
             min-height: 95vh;
             h1{
                 font-family: 'Jolly Lodger', cursive;
