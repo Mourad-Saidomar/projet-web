@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Page d'accueil</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html"><img src="/assets/img/greenmove-logo.png" class="img-fluid w-25" alt="GreenMove Logo"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navbar sur Desktop -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto d-none d-lg-flex">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold fs-5" href="#hero">Accueil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold fs-5" href="#services">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold fs-5" href="#avantages">Avantages</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold fs-5" href="#tarifs">Tarifs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold fs-5" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+
+                <!-- Navbar sur Tablette -->
+                    <ul class="navbar-nav ms-auto d-lg-none d-md-flex d-sm-none my-4 p-4">
+
+                        <li class="nav-item border-bottom border-2 rounded-end">
+                            <a class="nav-link text-white fw-bold fs-5" href="#hero">Accueil</a>
+                        </li>
+
+                        <li class="nav-item border-bottom border-2 rounded-end">
+                            <a class="nav-link text-white fw-bold fs-5" href="#services">Services</a>
+                        </li>
+
+                        <li class="nav-item border-bottom border-2 rounded-end">
+                            <a class="nav-link text-white fw-bold fs-5" href="#avantages">Avantages</a>
+                        </li>
+
+                        <li class="nav-item border-bottom border-2 rounded-end"> 
+                            <a class="nav-link text-white fw-bold fs-5" href="#tarifs">Tarifs</a>
+                        </li>
+
+                        <li class="nav-item border-bottom border-2 rounded-end"> 
+                            <a class="nav-link text-white fw-bold fs-5" href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Navbar sur Mobile -->
+                    <ul class="navbar-nav ms-auto d-lg-none d-md-none border rounded my-4 p-4">
+
+                        <li class="nav-item border-bottom border-2 rounded-end">
+                            <a class="nav-link  text-white fw-bold fs-5" href="#hero">Accueil</a>
+                        </li>
+
+                        <li class="nav-item border-bottom border-2 rounded-end">
+                            <a class="nav-link  text-white fw-bold fs-5" href="#services">Services</a>
+                        </li>
+
+                        <li class="nav-item border-bottom border-2 rounded-end">
+                            <a class="nav-link  text-white fw-bold fs-5" href="#avantages">Avantages</a>
+                        </li>
+
+                        <li class="nav-item border-bottom border-2 rounded-end"> 
+                            <a class="nav-link text-white fw-bold fs-5" href="#tarifs">Tarifs</a>
+                        </li>
+
+                        <li class="nav-item border-bottom border-2 rounded-end">
+                            <a class="nav-link text-white fw-bold fs-5" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Hero -->
+        <section id="hero">
+            <div class="hero">
+                <div class="container py-5">
+                    <div class="row py-5">
+                        <div class="col-12 m-5 p-5 d-flex flex-column justify-content-start align-items-start">
+                            <h1 class="fw-bold">Roulez smart, roulez vert.</h1>
+                            <p class="text-white fs-4 fw-bold mb-4">Déplace-toi vite, proprement et sans contrainte.</p>
+                            <div>
+                                <a href="#" class="btn shadow rounded-5 text-white fw-bold fs-2">Decouvrir</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg class="wave-1" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 128L34.3 122.7C68.6 117 137 107 206 101.3C274.3 96 343 96 411 101.3C480 107 549 117 617 106.7C685.7 96 754 64 823 42.7C891.4 21 960 11 1029 16C1097.1 21 1166 43 1234 42.7C1302.9 43 1371 21 1406 10.7L1440 0V256H1405.7C1371.4 256 1303 256 1234 256C1165.7 256 1097 256 1029 256C960 256 891 256 823 256C754.3 256 686 256 617 256C548.6 256 480 256 411 256C342.9 256 274 256 206 256C137.1 256 69 256 34 256H0V128Z" fill="#3BC1A8"/>
+            </svg>
+            <svg class="wave-2" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 128L34.3 122.7C68.6 117 137 107 206 101.3C274.3 96 343 96 411 101.3C480 107 549 117 617 106.7C685.7 96 754 64 823 42.7C891.4 21 960 11 1029 16C1097.1 21 1166 43 1234 42.7C1302.9 43 1371 21 1406 10.7L1440 0V256H1405.7C1371.4 256 1303 256 1234 256C1165.7 256 1097 256 1029 256C960 256 891 256 823 256C754.3 256 686 256 617 256C548.6 256 480 256 411 256C342.9 256 274 256 206 256C137.1 256 69 256 34 256H0V128Z" fill="#159E4E"/>
+            </svg>
+            <svg class="wave-3" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 128L34.3 122.7C68.6 117 137 107 206 101.3C274.3 96 343 96 411 101.3C480 107 549 117 617 106.7C685.7 96 754 64 823 42.7C891.4 21 960 11 1029 16C1097.1 21 1166 43 1234 42.7C1302.9 43 1371 21 1406 10.7L1440 0V256H1405.7C1371.4 256 1303 256 1234 256C1165.7 256 1097 256 1029 256C960 256 891 256 823 256C754.3 256 686 256 617 256C548.6 256 480 256 411 256C342.9 256 274 256 206 256C137.1 256 69 256 34 256H0V128Z" fill="#6FCF97"/>
+            </svg>
+        </section>
+
+        <!-- Services -->
+        <section id="services">
+            <div class="container py-5">
+                <h1 class="fw-bold text-center">Nos Services</h1>
+                <div class="row justify-content-center mb-5">
+                    <div class="rounded barre"></div>
+                </div>
+                <div class="row my-5">
+
+                    <!-- Card - Location instantanée -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-md-3 mb-sm-3">
+                        <div class="bg-card shadow card rounded-5 p-4 min-vh-50">
+                            <div class="card-boby">
+                                <div class="card-title">
+                                    <img class="rounded-5 mb-5" src="/assets/img/service/service-img-1.webp" alt="service-img-1">
+                                    <h3 class="text-center mb-5">Location instantanée</h3>
+                                </div>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>Trouve un vélo ou une trottinette proche en temps réel</li>
+                                        <li>Déverrouille en 1 clic</li>
+                                        <li>Paiement simple et rapide</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- Card - Navigation intelligente -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-md-3 mb-sm-3">
+                        <div class="bg-card shadow card rounded-5 card p-4">
+                            <div class="card-boby">
+                                <img class="rounded-5 mb-5" src="/assets/img/service/service-img-2.webp" alt="service-img-2">
+                                <div class="card-title">
+                                    <h3 class="text-center mb-5">Navigation intelligente</h3>
+                                </div>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>Itinéraires optimisés (rapide / sécurisé / écolo)</li>
+                                        <li>Pistes cyclables prioritaires</li>
+                                        <li>Temps estimé + distance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- Card - Suivi écologique -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-md-3 mb-sm-3">
+                        <div class="bg-card shadow card rounded-5 p-4 min-vh-50">
+                            <div class="card-boby">
+                                <img class="rounded-5 mb-5" src="/assets/img/service/service-img-3.webp" alt="service-img-3">
+                                <div class="card-title">
+                                    <h3 class="text-center mb-5">Location instantanée</h3>
+                                </div>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>Calcul des CO₂ économisés</li>
+                                        <li> Historique des trajets</li>
+                                        <li> Score écologique utilisateur</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <svg class="wave-1" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 128L34.3 122.7C68.6 117 137 107 206 101.3C274.3 96 343 96 411 101.3C480 107 549 117 617 106.7C685.7 96 754 64 823 42.7C891.4 21 960 11 1029 16C1097.1 21 1166 43 1234 42.7C1302.9 43 1371 21 1406 10.7L1440 0V256H1405.7C1371.4 256 1303 256 1234 256C1165.7 256 1097 256 1029 256C960 256 891 256 823 256C754.3 256 686 256 617 256C548.6 256 480 256 411 256C342.9 256 274 256 206 256C137.1 256 69 256 34 256H0V128Z" fill="#3BC1A8"/>
+            </svg>
+            
+            <svg class="wave-3" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 128L34.3 122.7C68.6 117 137 107 206 101.3C274.3 96 343 96 411 101.3C480 107 549 117 617 106.7C685.7 96 754 64 823 42.7C891.4 21 960 11 1029 16C1097.1 21 1166 43 1234 42.7C1302.9 43 1371 21 1406 10.7L1440 0V256H1405.7C1371.4 256 1303 256 1234 256C1165.7 256 1097 256 1029 256C960 256 891 256 823 256C754.3 256 686 256 617 256C548.6 256 480 256 411 256C342.9 256 274 256 206 256C137.1 256 69 256 34 256H0V128Z" fill="#6FCF97"/>
+            </svg>
+            <svg class="wave-2" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 128L34.3 122.7C68.6 117 137 107 206 101.3C274.3 96 343 96 411 101.3C480 107 549 117 617 106.7C685.7 96 754 64 823 42.7C891.4 21 960 11 1029 16C1097.1 21 1166 43 1234 42.7C1302.9 43 1371 21 1406 10.7L1440 0V256H1405.7C1371.4 256 1303 256 1234 256C1165.7 256 1097 256 1029 256C960 256 891 256 823 256C754.3 256 686 256 617 256C548.6 256 480 256 411 256C342.9 256 274 256 206 256C137.1 256 69 256 34 256H0V128Z" fill="#159E4E"/>
+            </svg>
+        </section>
+
+        <!-- Avantages -->
+        <section id="avantages" class="pt-5">
+            <div class="container py-5">
+                <h1 class="fw-bold text-center">Nos Avantages</h1>
+                <div class="row justify-content-center mb-5">
+                    <div class="rounded barre"></div>
+                </div>
+                <div class="bg-avantages shadow row my-5 p-4 rounded-5 text-center">
+                    <div class="col-lg-3 col-md-6 mb-md-3">
+                        <h1>+40%</h1>
+                        <h3>plus rapide en ville</h3>
+                    </div>
+                    <div class="border-cinquieme col-lg-3 col-md-6 mb-md-3">
+                        <h1>-70%</h1>
+                        <h3>d’émissions de CO₂</h3>
+                    </div>
+                    <div class="border-cinquieme col-lg-3 col-md-6 ">
+                        <h1>60%</h1>
+                        <h3>moins cher</h3>
+                    </div>
+                    <div class="border-cinquieme col-lg-3 col-md-6 ">
+                        <h1>100%</h1>
+                        <h3>disponible, 24/7</h3>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <svg class="wave-3" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 128L34.3 122.7C68.6 117 137 107 206 101.3C274.3 96 343 96 411 101.3C480 107 549 117 617 106.7C685.7 96 754 64 823 42.7C891.4 21 960 11 1029 16C1097.1 21 1166 43 1234 42.7C1302.9 43 1371 21 1406 10.7L1440 0V256H1405.7C1371.4 256 1303 256 1234 256C1165.7 256 1097 256 1029 256C960 256 891 256 823 256C754.3 256 686 256 617 256C548.6 256 480 256 411 256C342.9 256 274 256 206 256C137.1 256 69 256 34 256H0V128Z" fill="#6FCF97"/>
+            </svg>
+
+            <svg class="wave-2" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 128L34.3 122.7C68.6 117 137 107 206 101.3C274.3 96 343 96 411 101.3C480 107 549 117 617 106.7C685.7 96 754 64 823 42.7C891.4 21 960 11 1029 16C1097.1 21 1166 43 1234 42.7C1302.9 43 1371 21 1406 10.7L1440 0V256H1405.7C1371.4 256 1303 256 1234 256C1165.7 256 1097 256 1029 256C960 256 891 256 823 256C754.3 256 686 256 617 256C548.6 256 480 256 411 256C342.9 256 274 256 206 256C137.1 256 69 256 34 256H0V128Z" fill="#159E4E"/>
+            </svg>
+
+            <svg class="wave-1" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 128L34.3 122.7C68.6 117 137 107 206 101.3C274.3 96 343 96 411 101.3C480 107 549 117 617 106.7C685.7 96 754 64 823 42.7C891.4 21 960 11 1029 16C1097.1 21 1166 43 1234 42.7C1302.9 43 1371 21 1406 10.7L1440 0V256H1405.7C1371.4 256 1303 256 1234 256C1165.7 256 1097 256 1029 256C960 256 891 256 823 256C754.3 256 686 256 617 256C548.6 256 480 256 411 256C342.9 256 274 256 206 256C137.1 256 69 256 34 256H0V128Z" fill="#3BC1A8"/>
+            </svg>
+        </section>
+
+
+        <!-- Tarifs -->
+        <section id="tarifs">
+            <div class="container py-5">
+                <h1 class=" fw-bold text-center">Nos Tarifs</h1>
+                <div class="row justify-content-center mb-5">
+                    <div class="rounded barre"></div>
+                </div>
+                <div class="row my-5">
+
+                    <!-- Basic -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-md-5 mb-sm-5">
+                        <div class="border-tarifs shadow card rounded-5 bg-deuxieme">
+                            <div class="card-boby">
+                                <div class="card-titre bg-quatrieme p-4">
+                                    <h3 class="text-center fs-1">Basic</h3>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <div class="text-center bg-quatrieme px-4 rounded-bottom-4">
+                                        <p>0€/mois</p>
+                                    </div>
+                                </div>
+                                <div class="card-text p-5 ">
+                                    <ul class="list-unstyled mb-5 ">
+                                        <li class="fs-4">Paiement à l’usage</li>
+                                        <li class="fs-4">Prix standard</li>
+                                    </ul>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn shadow rounded-5 text-white fw-bold fs-2 fs-md-5">Obtenir</a>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- Plus -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-md-5 mb-sm-5">
+                        <div class="border-tarifs shadow card rounded-5 bg-deuxieme">
+                            <div class="card-boby ">
+                                <div class="card-titre bg-quatrieme p-4">
+                                    <h3 class="text-center fs-1">Plus</h3>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <div class="text-center bg-quatrieme px-4 rounded-bottom-4">
+                                        <p>7,99€/mois</p>
+                                    </div>
+                                </div>
+                                <div class="card-text p-5 ">
+                                    <ul class="list-unstyled mb-5 ">
+                                        <li class="fs-4">Déverrouillage gratuit</li>
+                                        <li class="fs-4"> -15% trajets</li>
+                                    </ul>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn shadow rounded-5 text-white fw-bold fs-2 fs-md-5">Obtenir</a>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- Premium -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-md-5 mb-sm-5">
+                        <div class="border-tarifs shadow card rounded-5 bg-deuxieme">
+                            <div class="card-boby">
+                                <div class="card-titre bg-quatrieme p-4">
+                                    <h3 class="text-center fs-1">Premium</h3>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <div class="text-center bg-quatrieme px-4 rounded-bottom-4">
+                                        <p>14,99€/mois</p>
+                                    </div>
+                                </div>
+                                <div class="card-text p-5 ">
+                                    <ul class="list-unstyled mb-5 ">
+                                        <li class="fs-4">-30% trajets</li>
+                                        <li class="fs-4">Support rapide</li>
+                                    </ul>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn shadow rounded-5 text-white fw-bold fs-2 fs-md-5">Obtenir</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <svg class="wave-2" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 128L34.3 122.7C68.6 117 137 107 206 101.3C274.3 96 343 96 411 101.3C480 107 549 117 617 106.7C685.7 96 754 64 823 42.7C891.4 21 960 11 1029 16C1097.1 21 1166 43 1234 42.7C1302.9 43 1371 21 1406 10.7L1440 0V256H1405.7C1371.4 256 1303 256 1234 256C1165.7 256 1097 256 1029 256C960 256 891 256 823 256C754.3 256 686 256 617 256C548.6 256 480 256 411 256C342.9 256 274 256 206 256C137.1 256 69 256 34 256H0V128Z" fill="#159E4E"/>
+            </svg>
+            
+            <svg class="wave-1" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 128L34.3 122.7C68.6 117 137 107 206 101.3C274.3 96 343 96 411 101.3C480 107 549 117 617 106.7C685.7 96 754 64 823 42.7C891.4 21 960 11 1029 16C1097.1 21 1166 43 1234 42.7C1302.9 43 1371 21 1406 10.7L1440 0V256H1405.7C1371.4 256 1303 256 1234 256C1165.7 256 1097 256 1029 256C960 256 891 256 823 256C754.3 256 686 256 617 256C548.6 256 480 256 411 256C342.9 256 274 256 206 256C137.1 256 69 256 34 256H0V128Z" fill="#3BC1A8"/>
+            </svg>
+
+            <svg class="wave-3" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 128L34.3 122.7C68.6 117 137 107 206 101.3C274.3 96 343 96 411 101.3C480 107 549 117 617 106.7C685.7 96 754 64 823 42.7C891.4 21 960 11 1029 16C1097.1 21 1166 43 1234 42.7C1302.9 43 1371 21 1406 10.7L1440 0V256H1405.7C1371.4 256 1303 256 1234 256C1165.7 256 1097 256 1029 256C960 256 891 256 823 256C754.3 256 686 256 617 256C548.6 256 480 256 411 256C342.9 256 274 256 206 256C137.1 256 69 256 34 256H0V128Z" fill="#6FCF97"/>
+            </svg>
+            
+        </section> 
+
+        <section id="contact" class="pb-5">
+            <div class="container py-5">
+                <h1 class="fw-bold text-center">Nous Contacter</h1>
+                <div class="row justify-content-center mb-5">
+                    <div class="rounded barre"></div>
+                </div>
+            </div>
+            <div class="container justify-content-center">
+                <form>
+                    <div class="row">
+                    <!-- Nom -->
+                    <div class="col-lg-6 col-md-6 mb-3">
+                        <label class="form-label fs-3">Nom</label>
+                        <input type="text" class="form-control fs-5 rounded-5" placeholder="Votre nom">
+                    </div>
+
+                    <!-- Prénom -->
+                    <div class="col-lg-6 col-md-6 mb-3">
+                        <label class="form-label fs-3">Prénom</label>
+                        <input type="text" class="form-control fs-5 rounded-5" placeholder="Votre prénom">
+                    </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                    <label class="form-label fs-3">Email</label>
+                    <input type="email" class="form-control fs-5 rounded-5" placeholder="Votre email">
+                    </div>
+
+                    <!-- Message -->
+                    <div class="mb-3">
+                    <label class="form-label fs-3">Message</label>
+                    <textarea class="form-control fs-5 rounded-5 py-4" rows="4" placeholder="Votre message"></textarea>
+                    </div>
+
+                    <!-- Bouton -->
+                    <div class="text-center">
+                    <button type="submit" class="btn shadow rounded-5 text-white fw-bold fs-2 px-5 bg-cinquieme">
+                        J’envoie le message
+                    </button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="bg-premier text-white text-center py-4">
+        <div class="d-flex align-items-center justify-content-center mb-3">
+            <div class="flex-grow-1 barre-footer rounded mx-3"></div>
+            <img src="/assets/img/greenmove-logo.png" class="img-fluid" alt="greenmove-logo">
+            <div class="flex-grow-1 barre-footer rounded mx-3"></div>
+        </div>
+
+        <!-- Réseaux -->
+        <div class="mb-3">
+            <i class="bi bi-facebook fs-3 mx-2"></i>
+            <i class="bi bi-twitter-x fs-3 mx-2"></i>
+            <i class="bi bi-youtube fs-3 mx-2"></i>
+            <i class="bi bi-instagram fs-3 mx-2"></i>
+        </div>
+
+        <!-- Menu -->
+        <ul class="list-unstyled d-flex justify-content-center gap-4 mb-3">
+            <li><a href="#services" class="text-white fs-4 text-decoration-none">Services</a></li>
+            <li><a href="#avantages" class="text-white fs-4 text-decoration-none">Avantages</a></li>
+            <li><a href="#tarifs" class="text-white fs-4 text-decoration-none">Tarifs</a></li>
+            <li><a href="#contact" class="text-white fs-4 text-decoration-none">Contact</a></li>
+        </ul>
+
+        <!-- Copyright -->
+        <p class="mb-0">&copy; 2026 GreenMove | Tous droits réservés.</p>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <script>
+        if (sessionStorage.getItem("scroll")) {
+            window.scrollTo(0, sessionStorage.getItem("scroll"));
+        }
+
+        window.addEventListener("scroll", () => {
+            sessionStorage.setItem("scroll", window.scrollY);
+        });
+
+        // Gestion du clic pour déplacer la barre bleue dans la sidebar
+        const sidebarLinks = document.querySelectorAll('.sidebar-link');
+        
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Empêche le saut de page pour la maquette
+                
+                // 1. On réinitialise tous les liens avec l'apparence "inactif"
+                sidebarLinks.forEach(l => {
+                    l.parentElement.classList.add('px-3');
+                    l.className = 'nav-link sidebar-link text-secondary fw-bold d-flex align-items-center gap-3 p-3';
+                });
+                
+                // 2. On applique l'apparence "actif" (avec barre bleue et fond clair) au lien cliqué
+                this.parentElement.classList.remove('px-3');
+                this.className = 'nav-link sidebar-link text-dark fw-bold d-flex align-items-center gap-3 border-start border-primary border-4 rounded-0 p-3 ps-4 bg-light';
+            });
+        });
+    </script>
+
+</body>
+</html>

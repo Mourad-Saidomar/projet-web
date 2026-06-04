@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Segoe UI, sans-serif;
+  color: white;
+  overflow-x: hidden;
+  background: radial-gradient(circle at top, rgba(124, 58, 237, 0.3), transparent 35%), linear-gradient(135deg, #232a47 0%, #230c47 70%);
+}
+
+.bg-blur {
+  background: rgba(255, 255, 255, 0.041) !important; /* transparence */
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(50px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.075) !important;
+}
+
+//Changer la couleur du placeholder
+input::placeholder {
+  color: white !important;
+}
+
+//Changer la couleur des options
+
+select.form-select:has(option[value]:checked) {
+  color: white !important; 
+}
+select.form-select option {
+  background-color: #230c47e8 !important;
+}
+
+#barre {
+    width: 220px;
+    height: 5px;
+}
+
+.btn-modif{
+  background-color: #6437ad;
+}
+
+.btn-modif:hover{
+  background-color: #7841d1;
+}
+
+#circle{
+    width: 70px;
+    height: 70px;    
+}
+
+.text-violet{
+  color: #6437ad;
+}
+
+.text-violet-1{
+  color: #6c63ff;
+}
+
+.circle-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.bs-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bs-card .card-img-top {
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bs-card .card-img-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bs-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.bs-card .card-actions {
+  margin-top: auto;
+}
+.bs-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 2rem rgba(108,99,255,0.15) !important;
+}
+.bs-card:hover .card-title { color: #6c63ff !important; }
+.bs-card:hover .card-img-top { transform: scale(1.03); }
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.details-overlay {
+  background: rgba(12, 7, 24, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}

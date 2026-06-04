@@ -1,0 +1,257 @@
+$bg-premier: #3BC1A8;
+$bg-deuxieme: #0C7779;
+$bg-troisieme: #003128;
+$bg-quatrieme: #159E4E;
+$bg-cinquieme: #249E94;
+$bg-sixieme: #6FCF97;
+$bg-septieme: #3BC1A8;
+
+.bg-premier{ background-color : #3BC1A8;}
+.bg-deuxieme{ background-color : #0C7779;}
+.bg-troisieme{ background-color : #003128;}
+.bg-quatrieme{ background-color : #159E4E;}
+.bg-cinquieme{ background-color : #249E94;}
+.bg-sixieme{ background-color : #6FCF97;}
+.bg-septieme{ background-color : #3BC1A8;}
+
+/* largeur scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* fond */
+::-webkit-scrollbar-track {
+  background: $bg-septieme;
+}
+
+/* barre */
+::-webkit-scrollbar-thumb {
+  background: $bg-deuxieme; /* couleur bootstrap primary */
+  border-radius: 10px;
+}
+
+/* hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $bg-cinquieme;
+}
+
+body{
+    font-family: 'Jockey One', sans-serif;
+      letter-spacing: 1.5px;
+
+}
+
+header{
+    background-color: $bg-premier;
+    nav{
+        .container{
+            button{
+                background-color: $bg-deuxieme;
+            }
+        }
+    }
+    a{
+        &:hover{
+            color: $bg-deuxieme !important;
+        }
+    }
+}
+
+main{
+    #hero{
+        position: relative;
+        min-height: 100vh;
+        .hero{
+            background:linear-gradient(to right, $bg-deuxieme, transparent), url(/assets/img/bg-hero.png) center/cover no-repeat;
+            min-height: 95vh;
+            h1{
+                font-family: 'Jolly Lodger', cursive;
+                color: $bg-cinquieme;
+                -webkit-text-stroke: 0.5px white;
+                font-size: 85px;
+
+            }
+            a{
+                background-color: $bg-quatrieme;
+                width: 250px;
+                
+            }
+            
+        }
+        .wave-1{
+            position: absolute;
+            bottom: 0;
+        }
+        .wave-2{
+            position: absolute;
+            bottom: -30px;
+        }
+        .wave-3{
+            position: absolute;
+            bottom: -60px;
+        }
+    }
+    #services{
+        position: relative;
+        min-height: 120vh;
+        background-color: $bg-sixieme;
+        h1{
+            font-size: 90px;
+        }
+        .barre{
+            width: 200px;
+            height: 8px;
+            background-color: $bg-cinquieme;
+        }
+        .bg-card{
+            background-color: $bg-septieme;
+            border: 5px solid $bg-deuxieme;
+            min-height: 100%;
+
+            img{
+                width: 100%;
+                max-height: 2%;
+            }
+
+            h3{
+                color: #003128;
+            }
+        }
+        .wave-1{
+            position: absolute;
+            bottom: 0;
+            transform: scaleX(-1);
+        }
+        .wave-2{
+            position: absolute;
+            bottom: -60px;
+            transform: scaleX(-1);
+        }
+        .wave-3{
+            position: absolute;
+            bottom: -30px;
+            transform: scaleX(-1);  
+        }
+
+        
+
+    }
+
+    #avantages{
+        position: relative;
+        min-height: 120vh;
+        background-color: $bg-quatrieme;
+        h1{
+            font-size: 90px;
+        }
+        .barre{
+            width: 200px;
+            height: 8px;
+            background-color: $bg-cinquieme;
+        }
+        .bg-avantages{
+            background-color: $bg-premier;
+            .border-cinquieme{
+                border-left: 5px solid $bg-cinquieme;
+            }
+            h1{
+                color: #006C6E;
+            }
+
+        }
+        .wave-1{
+            position: absolute;
+            bottom: -60px;
+        }
+        .wave-2{
+            position: absolute;
+            bottom: -30px;
+        }
+        .wave-3{
+            position: absolute;
+            bottom: 0;
+        }
+
+    }
+
+
+    #tarifs{
+        position: relative;
+        min-height: 120vh;
+        background-color: $bg-premier;
+        h1{
+            font-size: 90px;
+        }
+
+        .border-tarifs{
+            border: 2px solid $bg-cinquieme;
+
+        }
+
+        .barre{
+            width: 200px;
+            height: 8px;
+            background-color: $bg-cinquieme;
+        }
+        
+        .card-titre{
+            border-radius: 30px 30px 0px 0px;
+            
+        }
+
+        a{
+            background-color: $bg-quatrieme;
+            width: 50%;
+        }
+
+        .wave-1{
+            position: absolute;
+            bottom: -30px;
+        }
+        .wave-2{
+            position: absolute;
+            bottom: 0;
+        }
+        .wave-3{
+            position: absolute;
+            bottom: -60px;
+        }
+
+        
+    }
+
+
+    #contact{
+        background-color: $bg-sixieme;
+        h1{
+            font-size: 90px;
+        }
+        .barre{
+            width: 200px;
+            height: 8px;
+            background-color: $bg-cinquieme;
+        }
+        
+    }
+    
+}
+
+footer{
+        .barre-footer{
+            border-top: 5px solid $bg-cinquieme;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

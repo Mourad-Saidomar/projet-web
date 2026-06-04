@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Tableau de Bord</title>
+</head>
+<body class="bg-light">
+    <header class="py-4">
+        <div class="container">
+            <h1 class="text-white pt-5 fw-bold"><strong>LOGO</strong></h1>
+        </div>
+        <div class="container py-5">
+            <div class="text-white align-items-center text-center">
+                <h1 class="mb-4 fw-bold">Bienvenue Mourad</h1>
+                <h3>Créez des sites incroyables facilement</h3>
+                <a href="#" class="col-2 btn btn-primary btn-lg mt-3 fw-bold">En savoir plus</a>
+            </div>
+        </div>
+    </header>
+    <main class="min-vh-100 py-5">
+        <div class="container d-flex justify-content-around">
+            <!-- Menu Latéral (Sidebar) -->
+            <div class="col-lg-3 pe-lg-4 mb-4">
+                <div class="rounded shadow-sm d-flex flex-column h-100">
+                    <ul class="nav flex-column gap-2 mb-5">
+                        <li class="nav-item  bg-primary bg-opacity-10 px-3">
+                            <a href="#" class="nav-link text-primary fw-bold d-flex align-items-center gap-3 rounded p-3">
+                                <i class="bi bi-house-door-fill fs-5"></i> Accueil
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark fw-bold d-flex align-items-center gap-3 border-start border-primary border-4 rounded-0 p-3 ps-4" style="background-color: #f8f9fa;">
+                                <i class="bi bi-pie-chart-fill fs-5 text-secondary"></i> Tableau de Bord
+                            </a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a href="#" class="nav-link text-secondary fw-bold d-flex align-items-center gap-3 p-3">
+                                <i class="bi bi-plus-square fs-5"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a href="#" class="nav-link text-secondary fw-bold d-flex align-items-center gap-3 p-3">
+                                <i class="bi bi-chat-square-text-fill fs-5"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a href="#" class="nav-link text-secondary fw-bold d-flex align-items-center gap-3 p-3">
+                                <i class="bi bi-envelope-fill fs-5"></i> Contact
+                            </a>
+                        </li>
+                        <div class="mt-auto px-4 pb-2">
+                            <a href="#" class="btn btn-primary w-100 fw-bold py-2 d-flex align-items-center justify-content-center gap-2">
+                                <i class="bi bi-power fs-5"></i> Déconnexion
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <!-- Contenu Principal -->
+            <div class="col-lg-9">
+                <div class="container">
+                    <h1>Tableau de Bord</h1>
+                    <p>Aperçu de votre activité</p>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 my-2">
+                            <div class="card shadow-sm border-0 px-5">
+                                <div class="d-flex align-items-center">                             
+                                    <div class="col-2"><i class="bi bi-laptop fs-1"></i></div>
+                                    <div class="col-10 card-body">
+                                        <h2 class="card-title">24</h2>
+                                        <p class="card-text">Nouveaux visiteurs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 my-2">
+                            <div class="card shadow-sm border-0 px-5">
+                                <div class="d-flex align-items-center">                             
+                                    <div class="col-2 "><i class="bi bi-laptop fs-1"></i></div>
+                                    <div class="col-10 card-body">
+                                        <h2 class="card-title">8</h2>
+                                        <p class="card-text">Projets en cours</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-12 my-2">
+                            <div class="card shadow-sm border-0 px-5">
+                                <div class="d-flex align-items-center">                             
+                                    <div class="col-2"><i class="bi bi-laptop fs-1"></i></div>
+                                    <div class="col-10 card-body">
+                                        <h2 class="card-title">1,250</h2>
+                                        <p class="card-text">Visites ce mois-ci</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 my-2">
+                            <div class="card shadow-sm border-0 shadow-sm px-5">
+                                <div class="d-flex align-items-center">                             
+                                    <div class="col-2"><i class="bi bi-laptop fs-1"></i></div>
+                                    <div class="col-10 card-body">
+                                        <h2 class="card-title">3,500€</h2>
+                                        <p class="card-text">Revenus ce mois-ci</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm my-4">
+                        <div class="row g-0">
+                            <!-- Derniers Projets -->
+                            <div class="col-lg-6 col-md-12 p-4 border-end border-bottom">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <h4 class="mb-0 fw-bold">Derniers Projets</h4>
+                                    <a href="#" class="text-decoration-none small fw-bold">Voir plus</a>
+                                </div>
+                                
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="list-group-item list-group-item-action rounded border-0 d-flex justify-content-between align-items-center px-0 py-3 border-bottom">
+                                        <div>
+                                            <h6 class="mb-1 fw-bold text-dark">Site Web pour une agence</h6>
+                                            <small class="text-muted">Mis à jour il y a 12 jours</small>
+                                        </div>
+                                        <i class="bi bi-chevron-right text-muted"></i>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action rounded border-0 d-flex justify-content-between align-items-center px-0 py-3 border-bottom">
+                                        <div>
+                                            <h6 class="mb-1 fw-bold text-dark">Application E-commerce</h6>
+                                            <small class="text-muted">Mis à jour il y a 1 semaine</small>
+                                        </div>
+                                        <i class="bi bi-chevron-right text-muted"></i>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action rounded border-0 d-flex justify-content-between align-items-center px-0 py-3">
+                                        <div>
+                                            <h6 class="mb-1 fw-bold text-dark">Portfolio personnel</h6>
+                                            <small class="text-muted">Mis à jour il y a 2 semaines</small>
+                                        </div>
+                                        <i class="bi bi-chevron-right text-muted"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Tâches à Faire -->
+                            <div class="col-lg-6 col-md-12 p-4 border-bottom">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <h4 class="mb-0 fw-bold">Tâches à Faire</h4>
+                                    <a href="#" class="text-decoration-none small fw-bold">Voir plus</a>
+                                </div>
+                                
+                                <div class="d-flex flex-column gap-3 mb-5">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="task1" checked>
+                                        <label class="form-check-label text-secondary fw-semibold" for="task1">
+                                            Terminer le design d'accueil
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="task2" checked>
+                                        <label class="form-check-label text-secondary fw-semibold" for="task2">
+                                            Envoyer la proposition de devis
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="task3" checked>
+                                        <label class="form-check-label text-secondary fw-semibold" for="task3">
+                                            Tester le site e-commerce
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="progress">
+                                        <div class="bar-progress bg-primary"></div>
+                                    </div>
+                                    <div class="text-end mt-2">
+                                        <small class="text-muted fw-bold">3/5 Tâches complétées</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-4 border-0 shadow-sm">
+                        <h4 class="mb-4 fw-bold">Témoignages</h4>
+                        <div class="card p-4 shadow-sm border-0 d-flex flex-row align-items-center">
+                            <div class="me-4">
+                                <img src="https://mourad-saidomar.github.io/portfolio/image/photo.png" alt="Profile" class="rounded-circle shadow-sm" width="65" height="65" style="object-fit: cover;">
+                            </div>
+                            <div class="flex-grow-1">
+                                <p class="fw-bold fs-5 text-muted fst-italic mb-2">"Service professionnel et efficace, très satisfaite!"</p>
+                                <div class="d-flex justify-content-between align-items-end mt-3">
+                                    <div>
+                                        <h6 class="mb-0 fw-bold">Alice Martin</h6>
+                                        <small class="text-muted">Responsable marketing</small>
+                                    </div>
+                                    
+                                    <div class="d-flex gap-1 pb-1">
+                                        <div class="point bg-secondary rounded-circle opacity-25"></div>
+                                        <div class="point bg-secondary rounded-circle opacity-25"></div>
+                                        <div class="point bg-primary rounded-circle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center gap-2 mt-4">
+                            <div class="point bg-secondary rounded-circle opacity-25"></div>
+                            <div class="point bg-primary rounded-circle"></div>
+                            <div class="point bg-secondary rounded-circle opacity-25"></div>
+                            <div class="point bg-secondary rounded-circle opacity-25"></div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+    <footer  class="text-white text-center">
+        <div class="bg-footer-1 p-3 ps-5 d-flex ">
+            <h2 class="ps-5">Contactez-nous</h2>
+        </div>
+        <div class="row p-5 bg-footer-2 d-flex justify-content-around">
+            <div class="col-3">
+                <div class="d-flex flex-column align-items-start">
+                    <h3>A propos</h3>
+                </div>
+                <div class="border-bottom"></div>
+                <div class="d-flex mb- flex-column align-items-start">
+                    <a class="text-decoration-none text-white" href="#">Qui sommes-nous ?</a>
+                    <a class="text-decoration-none text-white" href="#">Notre équipe</a>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="d-flex mb- flex-column align-items-start">
+                    <h3>Lien utiles</h3>
+                </div>
+                <div class="border-bottom"></div>
+                <div class=" d-flex flex-column align-items-start">
+                    <a class="text-decoration-none text-white" href="#">Blog</a>
+                    <a class="text-decoration-none text-white" href="#">FAQ</a>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="d-flex flex-column align-items-start">
+                    <h3>Lien utiles</h3>
+                </div>
+                <div class="border-bottom"></div>
+                <div class="d-flex align-items-start">
+                    <div class=" rounded-circle bg-light py-1">4</div>
+                    <a class="mx-1 bg-white" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="mx-1" href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a class="mx-1" href="#"><i class="bi bi-instagram"></i></a>
+                    <a class="mx-1" href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="bg-footer-3 p-3">
+            <p>&copy; 2026 Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+        if (sessionStorage.getItem("scroll")) {
+            window.scrollTo(0, sessionStorage.getItem("scroll"));
+        }
+
+        window.addEventListener("scroll", () => {
+            sessionStorage.setItem("scroll", window.scrollY);
+        });
+
+        // Gestion du clic pour déplacer la barre bleue dans la sidebar
+        const sidebarLinks = document.querySelectorAll('.sidebar-link');
+        
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Empêche le saut de page pour la maquette
+                
+                // 1. On réinitialise tous les liens avec l'apparence "inactif"
+                sidebarLinks.forEach(l => {
+                    l.parentElement.classList.add('px-3');
+                    l.className = 'nav-link sidebar-link text-secondary fw-bold d-flex align-items-center gap-3 p-3';
+                });
+                
+                // 2. On applique l'apparence "actif" (avec barre bleue et fond clair) au lien cliqué
+                this.parentElement.classList.remove('px-3');
+                this.className = 'nav-link sidebar-link text-dark fw-bold d-flex align-items-center gap-3 border-start border-primary border-4 rounded-0 p-3 ps-4 bg-light';
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+
+header {
+    background: url('/assets/img/image-2.webp') center/cover no-repeat;
+}
+
+.bar-progress{
+    width: 60%;
+
+}
+
+.point{
+    width: 8px; 
+    height: 8px;
+}
+
+
+.bg-footer-1{
+    background-color: rgb(36, 60, 98);
+}
+
+.bg-footer-2{
+    background-color: rgb(25, 43, 79);
+}
+
+.bg-footer-3{
+    background-color: rgb(24, 39, 70);
+}

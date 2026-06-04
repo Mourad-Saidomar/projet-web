@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="bg-primary text-center text-white p-3">Liste à faire</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="card my-3">
+                <div class="card-body">
+                    <h2>Ajouter une tâche</h2>
+                    <p>Tâche</p>            
+                    <div class="mb-3">
+                        <input type="text" id="inputTache" class="form-control my-3" placeholder="Nouvelle tâche...">
+                        <button class="btn btn-primary" type="button" id="btnAjouter">Ajouter</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2>Liste des tâches</h2>
+                </div>
+                <div>
+                    <ul id="listeTaches" class="list-group">
+                        <!-- <li class="d-flex align-items-center rounded border justify-content-between p-3 m-3 bg-light">
+                            <p class="text-muted m-0 cursor-pointer">Tâche à faire dans cette liste</p>
+                            <button class="btn btn-danger" type="button">Supprimer</button>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="/assets/js/javascript.js"></script>
+</body>
+</html>

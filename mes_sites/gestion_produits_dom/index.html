@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>Page d'accueil</title>
+  </head>
+  <body>
+    <header class="d-flex justify-content-center">
+      <h1 class="rounded-5 text-center bg-blur text-white p-3 w-25 mt-5">
+        Gestion de produits
+      </h1>
+    </header>
+    <main>
+      <section class="container mt-5">
+        <div class="row">
+          <div id="table" class="col-6">
+            <button
+              id="btnAjout"
+              class="btn btn-modif text-white p-2 rounded-5 mb-3"
+            >
+              Ajouter un produit
+            </button>
+            <div class="table-responsive rounded-4 overflow-hidden bg-blur">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th class="bg-blur-table text-white" scope="col">ID</th>
+                    <th class="bg-blur-table text-white" scope="col">Nom</th>
+                    <th class="bg-blur-table text-white" scope="col">
+                      Catégorie
+                    </th>
+                    <th class="bg-blur-table text-white" scope="col">Prix</th>
+                    <th class="bg-blur-table text-white" scope="col">Stock</th>
+                    <th class="bg-blur-table text-white text-center" scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody id="listeProduits">
+                    <!-- <tr>
+                        <th class="bg-blur-1 text-white" scope="row">1</th>
+                        <td class="bg-blur-1 text-white" data-col="nom">PC</td>
+                        <td class="bg-blur-1 text-white" data-col="categorie">Electronique</td>
+                        <td class="bg-blur-1 text-white" data-col="prix">1200</td>
+                        <td class="bg-blur-1 text-white" data-col="stock">10</td>
+                        <td class="bg-blur-1 text-center">
+                            <button type="button" class="btn btn-modif btn-sm btn-supprimer-ligne">Supprimer</button>
+                        </td>
+                    </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div id="formulaire_produit" class="col-6">
+            <div class="card bg-blur p-4 rounded-4">
+              <h3 class="text-white">Ajouter un produit</h3>
+              <div class="row">
+                <div class="col-6">
+                  <label for="nom" class="text-white">Nom du produit</label>
+                  <input
+                    type="text"
+                    id="nom"
+                    class="form-control bg-blur text-white mb-3 rounded-5"
+                    placeholder="Entrez le nom du produit"
+                  />
+                </div>
+
+                <div class="col-6">
+                  <label for="categorie" class="text-white"
+                    >Nom de la Catégorie</label
+                  >
+                  <select
+                    id="categorie"
+                    class="form-select mb-3 bg-blur text-white rounded-5"
+                  >
+                    <option value="">Choisir une catégorie</option>
+                    <option value="Electronique">Electronique</option>
+                    <option value="Vêtements">Vêtements</option>
+                    <option value="Maison">Maison</option>
+                  </select>
+                </div>
+
+                <div class="col-6">
+                  <label for="prix" class="text-white">Prix du produit</label>
+                  <input
+                    type="number"
+                    id="prix"
+                    class="form-control bg-blur text-white mb-3 rounded-5"
+                    placeholder="0.00 €"
+                  />
+                </div>
+                <div class="col-6">
+                  <label for="stock" class="text-white">Stock du produit</label>
+                  <input
+                    type="number"
+                    id="stock"
+                    class="form-control bg-blur text-white mb-4 rounded-5"
+                    placeholder="0"
+                  />
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span id="erreur" class="text-danger fw-bold ms-3 d-none"
+                      >Veuillez remplir tous les champs</span
+                    >
+                  </div>
+                  <div>
+                    <button
+                      id="btnSupprimer"
+                      class="btn btn-secondary me-3 rounded-5"
+                    >
+                      Annuler
+                    </button>
+                    <button
+                      id="btnAjouter"
+                      class="btn btn-modif text-white rounded-5"
+                    >
+                      Ajouter
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/assets/js/javascript.js"></script>
+
+    <script>
+      if (sessionStorage.getItem("scroll")) {
+        window.scrollTo(0, sessionStorage.getItem("scroll"));
+      }
+
+      window.addEventListener("scroll", () => {
+        sessionStorage.setItem("scroll", window.scrollY);
+      });
+
+      // Gestion du clic pour déplacer la barre bleue dans la sidebar
+      const sidebarLinks = document.querySelectorAll(".sidebar-link");
+
+      sidebarLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault(); // Empêche le saut de page pour la maquette
+
+          // 1. On réinitialise tous les liens avec l'apparence "inactif"
+          sidebarLinks.forEach((l) => {
+            l.parentElement.classList.add("px-3");
+            l.className =
+              "nav-link sidebar-link text-secondary fw-bold d-flex align-items-center gap-3 p-3";
+          });
+
+          // 2. On applique l'apparence "actif" (avec barre bleue et fond clair) au lien cliqué
+          this.parentElement.classList.remove("px-3");
+          this.className =
+            "nav-link sidebar-link text-dark fw-bold d-flex align-items-center gap-3 border-start border-primary border-4 rounded-0 p-3 ps-4 bg-light";
+        });
+      });
+    </script>
+  </body>
+</html>

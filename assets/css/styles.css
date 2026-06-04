@@ -1,0 +1,127 @@
+/* 
+   Styles Personnalisés pour le Portfolio 
+*/
+
+/* --- Variables et Global --- */
+:root {
+    --primary-color: #4361ee;
+    --primary-hover: #3a56d4;
+    --dark-color: #2b2d42;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+    scroll-behavior: smooth;
+}
+
+/* Surcharge Bootstrap */
+.text-primary { color: var(--primary-color) !important; }
+.bg-primary { background-color: var(--primary-color) !important; }
+.btn-primary { 
+    background-color: var(--primary-color); 
+    border-color: var(--primary-color);
+}
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+/* --- Typographie et utilitaires --- */
+.heading-underline {
+    height: 4px;
+    width: 60px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    min-height: 80vh;
+    background: linear-gradient(135deg, rgba(67, 97, 238, 0.9), rgba(76, 201, 240, 0.8)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1920&q=80') center/cover;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    margin-bottom: -5vh; /* Pour compenser le clip-path sur l'espacement */
+    padding-bottom: 8vh;
+}
+
+/* --- Cartes Projets --- */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .card-img-wrapper img {
+    transform: scale(1.1);
+}
+
+/* Effet Overlay au survol de l'image */
+.card-img-wrapper .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 45, 66, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .card-img-wrapper .overlay {
+    opacity: 1;
+}
+
+.empty-project {
+    border: 2px dashed #dee2e6 !important;
+    background-color: transparent;
+}
+.empty-project:hover {
+    transform: none;
+    box-shadow: none !important;
+    border-color: var(--primary-color) !important;
+}
+
+/* --- Animations basiques --- */
+.slide-up {
+    animation: slideUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.slide-up-delay {
+    animation: slideUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.slide-up-delay-2 {
+    animation: slideUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
